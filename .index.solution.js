@@ -12,13 +12,13 @@ function filter(array, fn) {
 
 function some(array, fn) {
   return array.reduce(function(acc, el) {
-    return !acc ? fn(el) : true;
+    return acc || fn(el);
   }, false);
 }
 
 function every(array, fn) {
   return array.reduce(function(acc, el) {
-    return acc ? fn(el) : false;
+    return acc && fn(el);
   }, true);
 }
 

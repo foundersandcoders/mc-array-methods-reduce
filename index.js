@@ -1,6 +1,8 @@
 // in this morning challenge you are going to be recreating array methods using
 // reduce. The only array methods you are allowed to use in this challenge are
 // reduce and concat.
+// no for loops, no while loops, no for in. The only way arrays can be iterated
+// over is reduce, and concat is allowed as it's necessary for at least one of // the solutions.
 
 // the intention is that from this morning challenge you will understand how
 // reduce works, and, by recreating already existing array methods with reduce

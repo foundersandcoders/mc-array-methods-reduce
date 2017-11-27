@@ -1,0 +1,24 @@
+{
+  "name": "mc-array-methods-reduce",
+  "version": "1.0.0",
+  "description":
+    "a morning challenge for F&amp;C students to get better acquainted with reduce.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZooeyMiller/mc-array-methods-reduce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZooeyMiller/mc-array-methods-reduce/issues"
+  },
+  "homepage": "https://github.com/ZooeyMiller/mc-array-methods-reduce#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  }
+}

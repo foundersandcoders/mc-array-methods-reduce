@@ -1,30 +1,30 @@
 function map(array, fn) {
-  return array.reduce(function(acc, el) {
-    return acc.concat(fn(el));
+  return array.reduce(function(acc, current) {
+    return acc.concat(fn(current));
   }, []);
 }
 
 function filter(array, fn) {
-  return array.reduce(function(acc, el) {
-    return fn(el) ? acc.concat(el) : acc;
+  return array.reduce(function(acc, current) {
+    return fn(current) ? acc.concat(current) : acc;
   }, []);
 }
 
 function some(array, fn) {
-  return array.reduce(function(acc, el) {
-    return acc || fn(el);
+  return array.reduce(function(acc, current) {
+    return acc || fn(current);
   }, false);
 }
 
 function every(array, fn) {
-  return array.reduce(function(acc, el) {
-    return acc && fn(el);
+  return array.reduce(function(acc, current) {
+    return acc && fn(current);
   }, true);
 }
 
 function join(array, string) {
-  return array.reduce(function(acc, el) {
-    return acc + string + el;
+  return array.reduce(function(acc, current) {
+    return acc + string + current;
   });
 }
 

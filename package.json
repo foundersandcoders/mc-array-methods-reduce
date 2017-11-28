@@ -5,7 +5,8 @@
     "a morning challenge for F&amp;C students to get better acquainted with reduce.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js | tap-spec"
+    "test": "node index.test.js | tap-spec",
+    "testSolution": "node index.test.js solution | tap-spec"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,7 @@
 var test = require("tape");
-var solution = require("./index.js");
-// var solution = require("./.index.solution.js");
+var solution = require(process.argv[2] === "solution"
+  ? "./.index.solution.js"
+  : "./index.js");
 
 var numbersArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var numbersAndStrings = [1, 2, "3", "4"];

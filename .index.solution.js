@@ -23,9 +23,9 @@ function every(array, fn) {
 }
 
 function join(array, string) {
-  return array.reduce(function(acc, el, index, arr) {
-    return acc + el + (index !== arr.length - 1 ? string : "");
-  }, "");
+  return array.reduce(function(acc, el) {
+    return acc + string + el;
+  });
 }
 
 module.exports = {

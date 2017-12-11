@@ -1,8 +1,7 @@
 {
   "name": "mc-array-methods-reduce",
   "version": "1.0.0",
-  "description":
-    "a morning challenge for F&amp;C students to get better acquainted with reduce.",
+  "description": "a morning challenge for F&amp;C students to get better acquainted with reduce.",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js | tap-spec",
@@ -21,5 +20,8 @@
   "devDependencies": {
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "sinon": "^4.1.2"
   }
 }

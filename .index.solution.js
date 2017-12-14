@@ -28,10 +28,17 @@ function join(array, string) {
   });
 }
 
+function filterMap(array, filterFn, mapFn) {
+  return array.reduce(function(acc, el) {
+    return filterFn(el) ? acc.concat(mapFn(el)) : acc;
+  }, []);
+}
+
 module.exports = {
   map: map,
   filter: filter,
   some: some,
   every: every,
-  join: join
+  join: join,
+  filterMap: filterMap
 };

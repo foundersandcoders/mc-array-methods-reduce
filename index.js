@@ -69,10 +69,26 @@ function join(array, string) {
   //your code here
 }
 
+// Now let's make something new entirely! We're going to make filterMap.
+//
+// This is a function which takes an array, a function which returns a boolean,
+// and a function which maps the array element.
+//
+// It should be functionally the same as array.filter(filterFn).map(mapFn)
+//
+// This is actually a useful function to write with reduce as it allows you to
+// filter and map an array without having to iterate over it twice.
+// For those interested, the type signature for this function is:
+// [a] -> (a -> Bool) -> (a -> b) -> [b]
+function filterMap(array, filterFn, mapFn) {
+  //your code here
+}
+
 module.exports = {
   map: map,
   filter: filter,
   some: some,
   every: every,
-  join: join
+  join: join,
+  filterMap: filterMap
 };

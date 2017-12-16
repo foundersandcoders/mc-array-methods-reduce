@@ -103,7 +103,7 @@ test('tests filterMap', function(t) {
   t.plan(2);
   var numbersArrReduceSpy = arrayReduceSpy(numbersArr);
   var expected = numbersArr.filter(isEven).map(addOne);
-  var actual = solution.filterMap(numbersArr, isEven, addOne);
+  var actual = solution.filterMap(isEven, addOne, numbersArr);
   t.deepEqual(actual, expected, `actual: ${actual}, expected: ${expected}`);
   t.ok(numbersArrReduceSpy.calledOnce, 'reduce should have been used once');
   t.end();
